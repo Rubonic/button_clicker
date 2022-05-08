@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dojonary</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="navbar">
+                <div id="title">
+                    <h1>Dojonary</h1>
+                </div>
+                <div id="search">
+                    <input class="search" type="text" placeholder="Search..">
+                </div>
+                <div id="login">
+                    <button onclick="change(this)" class="btn">Login</button>
+                </div>
+            </div>
+            <div id="content">
+                <div id="leftside">
+                    <div class="definition">
+                        <div class="defLeft">
+                            <div class="word">
+                                <h2>ninja</h2>
+                                <p>noun</p>
+                                <p>Plural: <em>ninjas</em></p>
+                            </div>
+                            <div class="likes">
+                                <button class="button hover" onclick="alertMessage(), addLike1(this)"><span id="count1">0</span> Likes</button>
+                            </div>
+                        </div>
+                        <div class="defRight">
+                            <p class="wordDefinition">A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p></div>
+                    </div>
+                    <div class="definition">
+                        <div class="defLeft">
+                            <div class="word">
+                                <h2>ninja</h2>
+                                <p>noun</p>
+                                <p>Plural: <em>ninjas</em></p>
+                            </div>
+                            <div class="likes">
+                                <!-- Used relative positioning to move this button. How do to it better? -->
+                                <button class="button hover"  onclick="alertMessage(), addLike2(this)"><span id="count2">0</span> Likes</button>
+                            </div>
+                        </div>                                        
+                        <div class="defRight">
+                            <p class="wordDefinition">A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="rightside">
+                    <div id="addDefText">
+                        <!-- How to make the text bold here iwthout text shadow -->
+                        <h2>Dojonary is Defined By <span class="bold">YOU</span></h2>    
+                        <div id="addDefBtnBox">
+                            <button onclick="removeBtn(this)" id="addDefBtn">Add Definition</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
